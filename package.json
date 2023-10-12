@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall":"sed -i.bak 's/ ?? props.searchParams?.lang//g' node_modules/next-translate-plugin/lib/cjs/templateAppDir.js"
   },
   "dependencies": {
     "next": "13.5.4",
